@@ -40,7 +40,8 @@ MORSE_CODE_DICT = { 'A':'.-',
                     '/':'-..-.',
                     '-':'-....-',
                     '(':'-.--.',
-                    ')':'-.--.-'
+                    ')':'-.--.-',
+                    ' ':' '
                     }
 #from ENG to Morse code
 def encrypt(message):
@@ -48,7 +49,7 @@ def encrypt(message):
     morse_code = []
     letter_encode = ""
     i = 0
-    
+
     for i in range(len(message)):
         #encode current letter and add it to list
         letter_encode = MORSE_CODE_DICT[message[i]]
@@ -56,6 +57,7 @@ def encrypt(message):
 
     for i in morse_code:
         print(i, end=" ")
+
 
 #from Morse code to ENG
 def decrypt(message):
