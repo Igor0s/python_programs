@@ -1,5 +1,5 @@
 import tkinter
-from PIL import Image, ImageDraw
+#from PIL import Image, ImageDraw
 
 
 HEIGHT = 1020
