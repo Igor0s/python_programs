@@ -1,6 +1,6 @@
 import tkinter
 
-HEIGHT = 500
+HEIGHT = 1000
 WIDTH = 500
 x = 20
 y = 20
