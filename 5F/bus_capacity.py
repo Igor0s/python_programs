@@ -1,16 +1,5 @@
 import tkinter
 
-HEIGHT = 1000
-WIDTH = 500
-x = 20
-y = 20
-state = 0
-current_capacity = 0
-
-window = tkinter.Tk()
-canvas = tkinter.Canvas(window, width=WIDTH, height=HEIGHT, bg = "white")
-canvas.pack()
-
 def bus_stops_names(bus_stops):
     x = 20
     y = 20
@@ -58,6 +47,17 @@ with open("C:\\SCHOOL\\programing\\5.F\\bus.txt",encoding = "utf-8") as input_fi
         
         if "" in bus_stops:
             bus_stops.remove("")   
+
+HEIGHT = len(bus_stops)*50
+WIDTH = 500
+x = 20
+y = 20
+state = 0 #nuber of passangers in bus
+current_capacity = 0
+
+window = tkinter.Tk()
+canvas = tkinter.Canvas(window, width=WIDTH, height=HEIGHT, bg = "white")
+canvas.pack()
 
 bus_stops_names(bus_stops)
 canvas.bind('<Button-1>', bus_capacity_bar)
