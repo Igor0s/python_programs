@@ -61,7 +61,8 @@ for i in range(10):
             counter_drops += 1
         else:
             canvas.create_text(WIDTH/2, HEIGHT-50, text = f"drops are paused", anchor = "n", font="Times 20 italic bold")
-
+            pause()
+    print(counter)
 '''
 I appologize that the button is not working properly, I spent hours trying to figure out how to resume the animation again.
 Unfortunately with no result.

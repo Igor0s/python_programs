@@ -40,6 +40,7 @@ def delete_text(event):
             canvas.create_text(500,900, text= f"Score: {score_counter}", tags = "score", fill= "white", anchor= "n", font = "Arial 20 bold italic" )               
         else:
             miss_counter += 1
+    print(miss_counter)
     
 def animate(speed, counter):   
     y_cord = 0   
